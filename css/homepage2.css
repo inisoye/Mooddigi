@@ -1,0 +1,212 @@
+@media only screen and (max-width: 1111px) {
+  .actual-title h1 {
+    font-size: 7em;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .actual-title h1 {
+    font-size: 6em;
+  }
+
+  .side-buttons button {
+    font-size: 1.3em;
+  }
+
+  .lollipop-stick {
+    width: 25%;
+    border-top: 3px solid #393e46;
+  }
+
+  .lollipop-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 3.4em;
+    border: 3px solid #393e46;
+  }
+}
+
+@media only screen and (max-width: 878px) {
+  .actual-title h1 {
+    font-size: 5em;
+  }
+
+  .actual-title p {
+    font-size: 1.2em;
+  }
+
+  .intro-modal p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  /* .actual-title h1 {
+    font-size: 4em;
+  } */
+
+  .title-box-grid {
+    grid-column: 1/4;
+    grid-row: 1/1;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .outside-title-box {
+    grid-column: 3/4;
+    grid-row: 1/1;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .side-buttons {
+    grid-row: 1/2;
+  }
+
+  .emoji-lollipop {
+    grid-row: 5/6;
+  }
+
+  .side-buttons button {
+    /* *flips the button horizontally (including text) */
+    transform: scaleX(-1);
+    font-size: 1.2em;
+    display: block;
+    clear: both;
+  }
+
+  .side-buttons .try-moodigi {
+    float: right;
+    /* clear: both; */
+    margin: 0;
+    margin-bottom: 6%;
+  }
+
+  .side-buttons .mood-gini {
+    float: right;
+    margin: 0;
+  }
+
+  /* *flips the button's text back to normal to make it readable */
+  .side-buttons button span {
+    /* *inline elements cannot be transformed! */
+    display: inline-block;
+    transform: rotate(180deg) scale(1, -1);
+  }
+
+  .stick-and-circle {
+    transform: scale(-1, 1);
+    margin-right: inherit;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .intro-modal {
+    width: 60%;
+    height: 35%;
+
+    left: 20%;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 669px) {
+  .side-buttons .try-moodigi {
+    margin-top: 30%;
+  }
+
+  .side-buttons .mood-gini {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 493px) {
+  .actual-title h1 {
+    font-size: 4em;
+  }
+
+  .actual-title p {
+    font-size: 1em;
+  }
+
+  .intro-modal {
+    width: 65%;
+    height: 40%;
+
+    left: 15%;
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 407px) {
+  .intro-modal {
+    padding-top: 10%;
+    font-size: .8em;
+  }
+}
+
+
+@media only screen and (max-width: 395px) {
+  .actual-title h1 {
+    font-size: 3.3em;
+  }
+
+  .actual-title p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .actual-title h1 {
+    font-size: 3em;
+  }
+
+  .actual-title p {
+    font-size: 1em;
+  }
+
+  .side-buttons button {
+    font-size: 1em;
+  }
+
+  .intro-modal {
+    width: 75%;
+    height: 45%;
+
+    left: 10%;
+    top: 20%;
+  }
+}
+
+/* *for height variations (landscape on mobile) */
+
+@media only screen and (max-height: 555px) {
+  .side-buttons .mood-gini {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 472px) {
+  .side-buttons {
+    grid-row: 2/3;
+  }
+
+  .side-buttons .try-moodigi {
+    margin-top: 0;
+  }
+
+  .emoji-lollipop {
+    grid-row: 4/6;
+  }
+}
+
+@media only screen and (max-height: 308px) {
+  .emoji-lollipop {
+    grid-row: 4/5;
+  }
+
+  .lollipop-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+  }
+}

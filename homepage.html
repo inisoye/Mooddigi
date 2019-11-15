@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>moodDÍGÍ</title>
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/homepage2.css" />
+    <script src="js/homepage.js"></script>
+  </head>
+  <!-- bg = background color, br = border color, cl = text colour -->
+  <body class="light-bg" onload="displayIntoModal()" onclick="closeIntoModal()">
+    <div class="intro-modal" id="intro-modal">
+      <p>
+        <span>Hi Human, moodDÍGÍ welcomes you.</span>
+        Try clicking the mouthless(😶) emoji
+        lollipop on the bottom right of this page (at least) five times.
+        <span
+          >Also, you can click "try moodDÍGÍ" to start and click anywhere to
+          close this alert</span
+        >
+      </p>
+    </div>
+    <div class="homepage-container light-bg" id="homepage-container">
+      <div class="title-box-grid medium-bg dark-br">
+        <header class="actual-title">
+          <h1 class="light-cl" id="digi-medium-cl">
+            <span class="dark-cl">mood</span>DÍGÍ
+          </h1>
+          <p>be calm... you are here now</p>
+        </header>
+
+        <div class="explanation" id="explanation">
+          <ul>
+            <li>
+              <b>Mood</b>—/mu:d/ [English] <i>Noun</i>—a temporary state of mind
+              or feeling.
+            </li>
+            <li>
+              <b>Dígí</b>—/di:gi:/ [Yoruba] <i>Noun</i>—a mirror (gíláàsì).
+            </li>
+            <li>
+              <b>moodDÍGÍ</b>—/mu:di:gi:/ [Coined] <i>Noun</i>—a mood-based meme
+              displayer created by Inioluwa Akinyosoye.
+            </li>
+          </ul>
+
+          <button onclick="removeExplanation()" class="medium-cl-hover">
+            okie dokie
+          </button>
+        </div>
+      </div>
+
+      <div class="outside-title-box">
+        <div class="side-buttons">
+          <button
+            class="try-moodigi dark-bg light-cl"
+            onclick="location.href='memeGenerator.html';"
+          >
+            <span>try moodDÍGÍ</span>
+          </button>
+          <button
+            class="mood-gini gini dark-br dark-cl"
+            onclick="displayExplanation()"
+          >
+            <span>mood gini?</span>
+          </button>
+        </div>
+
+        <!-- <p class="click-notice">click the emoji lollipop!</p> -->
+
+        <div class="emoji-lollipop">
+          <!-- <div class="curved-line"></div> -->
+
+          <div class="stick-and-circle">
+            <div class="lollipop-stick dark-br"></div>
+            <!-- <img src="/images/curvedLine.svg" alt="line pointing to text" /> -->
+            <a onclick="shuffleColours()"
+              ><div
+                id="lollipop-circle"
+                class="lollipop-circle dark-br medium-bg dark-bg-hover medium-br-hover"
+              >
+                😶
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

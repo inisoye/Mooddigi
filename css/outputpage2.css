@@ -1,0 +1,101 @@
+/* *Queries for header bit */
+@media only screen and (max-width: 1442px) {
+  .output-page header button {
+    width: 6em;
+  }
+}
+
+@media only screen and (max-width: 784px) {
+  .output-page header {
+    text-align: center;
+  }
+}
+/* *Header bit ends */
+
+
+/* *Queries for content */
+@media only screen and (max-width: 1117px) {
+  .left-tags-plus-content {
+    grid-template-columns: 80%;
+  }
+
+  .left-tags {
+    display: none;
+  }
+
+  .content-grid div {
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .quote-container {
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .quote {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .quote-container {
+    /* overflow: scroll; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quote {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  .quote-container {
+   height: 200px;
+  }
+
+  .quote {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .quote-container {
+    padding-top: 0;
+    /* height: 180px; */
+  }
+
+  .quote {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  .quote-container {
+    /* overflow: scroll; */
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* *Content queries end */
+
+@media only screen and (max-height: 685px) {
+
+  .content-grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 6px;
+  }
+
+}

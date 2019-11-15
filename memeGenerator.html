@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>moodDÍGÍ</title>
+    <link rel="stylesheet" href="css/formpage.css" />
+    <link rel="stylesheet" href="css/formpage2.css" />
+    <link rel="stylesheet" href="css/outputpage.css" />
+    <link rel="stylesheet" href="css/outputpage2.css" />
+    <script src="js/memeGenerator.js"></script>
+  </head>
+  <body class="light-bg">
+    <div class="why-na-modal" id="why-na-modal">
+      <p>
+        The emotions moodDÍGÍ is able to understand fall into four categories
+        shown by the main colours on her skin. These categories are:
+      </p>
+      <ul>
+        <li>Anger</li>
+        <li>Happiness</li>
+        <li>Fear</li>
+        <li>Peace</li>
+      </ul>
+      <p>
+        These finite choices are (very!) loosely based on
+        <a
+          target="_blank"
+          href="https://web.archive.org/web/20010716082847/http://americanscientist.org/articles/01articles/Plutchik.html"
+          >Robert Plutchik's Wheel of emotions</a
+        >. <span> The tip here is: to prevent moodDÍGÍ from shouting at you, enter an
+        emotion that falls within any of those listed above. You're welcome😄.
+      </span><span>click outside this alert to exit it.</span></p>
+    </div>
+
+    <div class="form-page" id="form-page">
+      <header class="form-page-header">
+        <p id="banner" class="banner">
+          <a
+            target="_blank"
+            href="https://twitter.com/Biliquis_X/status/1161359560709484545?s=20"
+            >Eskelebebetiolebebe!</a
+          >
+          Unfortunately, moodDÍGÍ does not know that emotion ☹️.
+          <button onclick="displayWhyNaModal()" class="why-na">Why Na?</button>
+          <!-- <a href="#why-na-modal" onclick="displayWhyNaModal()" class="why-na">Why Na?</a> -->
+        </p>
+        <audio id="eskelebe" src="sounds/eskelebe.mp3"></audio>
+
+        <div class="split-container">
+          <div class="split red1"></div>
+          <div class="split yellow1"></div>
+          <div class="split green1"></div>
+          <div class="split blue1"></div>
+        </div>
+      </header>
+
+      <div class="form-page-body" id="form-page-body" onclick="closeWhyNaModal()">
+        <!-- Style this as an overlay with the lowest z-index -->
+        <div class="form-page-overlay">
+          <div class="red2"></div>
+          <div class="yellow2"></div>
+          <div class="green2"></div>
+          <div class="blue2"></div>
+        </div>
+
+        <div class="outside-overlay">
+          <p>how are you feeling right now? <span>enter below</span></p>
+          <form action="">
+            <input
+              type="text"
+              name="mood"
+              id="mood-entry"
+              class="form"
+              placeholder="try “stoked”"
+              onkeypress="displayOutputOnEnter(event)"
+            />
+          </form>
+          <button
+            id="done-button"
+            class="done-button"
+            onclick="checkAngry();checkHappy();checkFearful();checkPeaceful();displayOutput();checkAllEmotions();"
+          >
+            <span class="d">DA</span><span class="o">Z</span
+            ><span class="n">Z</span><span class="e">IT</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- bg = background color, br = border color, cl = text colour -->
+    <div class="output-page" id="output-page">
+      <header class="dark-bg">
+        <button class="light-cl dark-br medium-bg-hover">
+          <span class="dark-cl">back</span>DÍGÍ
+        </button>
+      </header>
+
+      <div class="left-tags-plus-content">
+        <div class="left-tags">
+          <!-- *hoverLight-bg means background is in lightest "hover shade". light-bg-hover when user hovers, colour is in regular "semi-light" shade -->
+          <button
+            class="meme-left medium-cl light-bg hoverLight-bg dark-br light-bg-hover"
+            type="button"
+          >
+            <span class="light-cl-hover">meme</span>
+          </button>
+          <!-- <hr /> -->
+          <button
+            class="quote-left medium-cl light-bg hoverLight-bg dark-br light-bg-hover"
+            type="button"
+          >
+            <span class="light-cl-hover">quote</span>
+          </button>
+          <!-- <hr /> -->
+          <button
+            class="tune-left medium-cl light-bg hoverLight-bg dark-br light-bg-hover"
+            type="button"
+          >
+            <span class="light-cl-hover">tune</span>
+          </button>
+        </div>
+
+        <div class="content-grid">
+          <button class="top-button">meme</button>
+          <div class="meme-container medium-bg dark-br">
+            <img class="meme dark-br" id="meme" src="" alt="displayed meme" />
+          </div>
+          <hr class="dark-br hr" />
+          <button class="top-button">quote</button>
+          <div class="quote-container medium-bg dark-br">
+            <p class="quote dark-cl" id="quote"></p>
+          </div>
+          <hr class="dark-br hr" />
+          <button class="top-button">tune</button>
+          <div class="tune-container medium-bg dark-br">
+            <iframe
+              class="tune dark-br"
+              id="tune"
+              allow="autoplay *; encrypted-media *;"
+              frameborder="0"
+              height="150"
+              style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              src=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
