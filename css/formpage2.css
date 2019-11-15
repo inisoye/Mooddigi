@@ -76,6 +76,7 @@
 
   .outside-overlay input {
     font-size: 3.5em;
+    height: 70px;
   }
 
   .outside-overlay button {

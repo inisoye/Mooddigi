@@ -197,7 +197,7 @@ let randAngryTunesIndex = Math.floor(angryTunesCount * Math.random());
 function checkAngry() {
   let formInputUntrimmed = document.getElementById("mood-entry").value;
   // todo - trimming works but trimmed word doesnt not match with string item, for some reason
-  let formInput = formInputUntrimmed.replace(/\s+/g, "");
+  let formInput = formInputUntrimmed.toLowerCase().replace(/\s+/g, "");
   console.log(typeof formInput);
 
   let angryTheme = {
@@ -513,7 +513,10 @@ let randHappyTunesIndex = Math.floor(happyTunesCount * Math.random());
 
 // *Display relevant outputs if a "happy" match is generated
 function checkHappy() {
-  let formInput = document.getElementById("mood-entry").value.trim();
+  let formInput = document
+    .getElementById("mood-entry")
+    .value.toLowerCase()
+    .trim();
 
   let happyTheme = {
     colour: "yellow",
@@ -899,7 +902,10 @@ let fearfulTunesCount = fearfulTunesArray.length;
 let randFearfulTunesIndex = Math.floor(fearfulTunesCount * Math.random());
 
 function checkFearful() {
-  let formInput = document.getElementById("mood-entry").value.trim();
+  let formInput = document
+    .getElementById("mood-entry")
+    .value.toLowerCase()
+    .trim();
 
   let fearfulTheme = {
     colour: "green",
@@ -1357,7 +1363,10 @@ let peacefulTunesCount = peacefulTunesArray.length;
 let randPeacefulTunesIndex = Math.floor(peacefulTunesCount * Math.random());
 
 function checkPeaceful() {
-  let formInput = document.getElementById("mood-entry").value.trim();
+  let formInput = document
+    .getElementById("mood-entry")
+    .value.toLowerCase()
+    .trim();
 
   let peacefulTheme = {
     colour: "blue",
@@ -1471,7 +1480,10 @@ function playEskelebe() {
 }
 
 function checkAllEmotions() {
-  let formInput = document.getElementById("mood-entry").value.trim();
+  let formInput = document
+    .getElementById("mood-entry")
+    .value.toLowerCase()
+    .trim();
 
   //* Hides output page if inputted word is not in any array; Displays alert as well. Also Plays Eskelebe
   if (
