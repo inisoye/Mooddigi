@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,700|Krona+One|Titillium+Web:900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Catamaran:800&display=swap");
 
-
 html,
 body {
   margin: 0;
@@ -52,9 +51,9 @@ body {
 
 .why-na {
   /* *styles the button as an achor tag/link */
-  background: none!important;
+  background: none !important;
   border: none;
-  padding: 0!important;
+  padding: 0 !important;
   /*optional*/
   font-family: "Krona One", sans-serif;
   font-size: 1em;
@@ -114,7 +113,7 @@ body {
   display: block;
   line-height: 140%;
   font-style: italic;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .why-na-modal ul {
@@ -193,7 +192,7 @@ body {
   position: absolute;
   bottom: 0;
   /* !This height needs to be optimised for other screens! */
-  height: calc(100% - 66px); 
+  height: calc(100% - 66px);
   background-color: beige;
 }
 
@@ -251,6 +250,9 @@ body {
   outline: 0;
 
   text-transform: lowercase;
+
+  /** added to remove default mobile form box-shadow inset */
+  -webkit-appearance: none;
 }
 
 .outside-overlay input::placeholder {
@@ -267,6 +269,9 @@ body {
   height: 1.7em;
   width: 4em;
   padding-bottom: 0.5em;
+
+  /** added to remove default mobile form box-shadow inset */
+  -webkit-appearance: none;
 
   color: black;
   background: #ffffff;
